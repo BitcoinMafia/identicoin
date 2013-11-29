@@ -1,0 +1,4 @@
+identicoin
+==========
+
+Identicon Generator API
