@@ -1,6 +1,8 @@
 require 'open-uri'
+require 'set'
 require 'bundler/setup'
 require 'sinatra'
+
 Bundler.require
 
 
@@ -26,7 +28,7 @@ def s3_directory
 end
 
 def all_keys
-  s3_directory.files.map { |file| file.key }
+  s3_directory.files.map { |file| file.key }.to_set
 end
 
 def upload_file(key, filepath)
