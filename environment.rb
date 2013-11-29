@@ -6,7 +6,7 @@ Bundler.require
 
 def create_and_upload(key)
   local_path = to_local_dir(key)
-  RubyIdenticon.create_and_save(key, local_path)
+  RubyIdenticon.create_and_save(key, local_path, square_size: 15, border_size: 5)
   Thread.new { upload_file(key, local_path) }
   return local_path
 end
