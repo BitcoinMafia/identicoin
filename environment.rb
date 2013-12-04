@@ -3,10 +3,6 @@ require 'set'
 require 'bundler/setup'
 require 'sinatra'
 
-configure :production do
-  require 'newrelic_rpm'
-end
-
 Bundler.require
 
 def create_and_upload(key)
