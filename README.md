@@ -1,4 +1,7 @@
-identicoin
-==========
+## Identicoin | Identicon Generator API
 
-Identicon Generator API
+### Endpoint
+
+```
+http://identico.in/address/<your_key>
+```
