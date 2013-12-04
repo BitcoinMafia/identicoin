@@ -1,3 +1,4 @@
 .env
 id_rsa
 id_rsa.pub
+new_relic.yml
