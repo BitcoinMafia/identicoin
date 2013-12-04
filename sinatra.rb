@@ -1,4 +1,8 @@
-get '/:key' do
+get '/' do
+  send_file File.join(settings.public_folder, 'index.html')
+end
+
+get '/address/:key' do
   headers('Content-Type' => "image/jpeg")
   open_image(params[:key])
 end
