@@ -3,6 +3,14 @@ get '/' do
 end
 
 get '/address/:key' do
+  respond
+end
+
+get '/address/:key/' do
+  respond
+end
+
+def respond
   headers('Content-Type' => "image/jpeg")
   open_image(params[:key])
 end
