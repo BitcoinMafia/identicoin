@@ -6,5 +6,5 @@ Generates identicons for Bitcoin Addresses
 **Public API Endpoint**
 
 ```
-http://identico.in/address/<your_key>
+http://identicoin.herokuapp.com/address/<your_key>
 ```
