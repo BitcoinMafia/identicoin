@@ -1,3 +1,4 @@
+.DS_Store
 .env
 id_rsa
 id_rsa.pub
