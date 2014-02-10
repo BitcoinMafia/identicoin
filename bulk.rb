@@ -2,7 +2,12 @@ require 'bundler/setup'
 
 Bundler.require
 def generate(key, size)
-	RubyIdenticon.create_and_save(key, "data/#{key}-#{size}.jpeg", square_size: size, border_size: 5)
+    path = "data/#{key}-#{size}.jpeg"
+    if File.exists?(path)
+        p 'Skip'
+        return
+    end
+	RubyIdenticon.create_and_save(key, path, square_size: size, border_size: 5)
 end
 
 Dir.mkdir("data") unless File.exists?("data")
