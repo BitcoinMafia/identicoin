@@ -3,10 +3,12 @@ get '/' do
 end
 
 get '/address/:key' do
+  cache_control :public
   respond
 end
 
 get '/address/:key/' do
+  cache_control :public
   respond
 end
 
